@@ -250,15 +250,13 @@ p {
 .custom-card {
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
     transition: height 0.3s ease;
 }
 
-.custom-card .card-text {
-    color: #2f2f30;
-}
-
 .custom-card .card-img-top {
-    display: block;
     width: 100%;
     transition: transform 0.3s ease;
 }
@@ -270,22 +268,22 @@ p {
     width: 100%;
     background-color: #2f2f308d;
     color: #f0ece2;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     z-index: 1;
 }
 
 .custom-card .card-body {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
     background-color: #b995a1;
     padding: 6px;
     border-top: 2px solid #915267;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+}
+
+.custom-card:hover {
+    height: auto;
 }
 
 .custom-card:hover .card-body {
@@ -296,12 +294,20 @@ p {
     margin-top: 10px;
 }
 
-.card:not(.custom-card) .card-body {
-    display: block;
-    position: static;
-    border-top: none;
-    padding: 15px;
-    background-color: transparent;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.custom-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Card */
@@ -325,6 +331,8 @@ p {
 
 .card-text {
     font-size: 0.9rem;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .crdbttnz {
