@@ -1,3 +1,5 @@
+
+// Countdown
 var botones = document.querySelectorAll(".boton");
 
 botones.forEach(function(boton) {
@@ -42,5 +44,3 @@ function updateCountdown(elementId, endTime) {
 }
 
 updateCountdown('countdown1', '2024/09/05 8:00:00');
-updateCountdown('countdown2', '');
-updateCountdown('countdown3', '');

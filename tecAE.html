@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,87 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./tecStyles.css">
 
     <link rel="shortcut icon" href="img/icon-school.png">
     <link rel="icon" href="img/icon-school.png">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar mb-3" data-mdb-sidenav-init class="sidenav" data-mdb-right="true">
+            <div class="container-fluid position-relative">
+                <img src="img/icon-school.png" alt="EET2" class="navbar-brand">
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuitem"
+                    aria-controls="menuitem" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse position-absolute w-100 mt-3" id="menuitem" style="top: 100%; left: 0;">
+                    <div class="collapsed-content">
+                        <a href="./Index.html" class="btn btn-primary mb-2 bttnz">Página principal</a>
+                        <a href="./tecCO.html" class="btn btn-primary mb-2 bttnz">Técnico Computación</a>
+                        <a href="./tecGA.html" class="btn btn-primary mb-2 bttnz">Técnico Gastronomía</a>
+                    </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>    
+
+    <section id="tech-aeg">
+        <h1>Técnico en Administración de Empresas</h1>
+        <div class="content-wrapper">
+            <p class="imgfill2">
+                La tecnicatura en <strong>Administración de Empresas</strong> está diseñada para formar profesionales competentes en la gestión y administración de organizaciones. Esta tecnicatura no solo proporciona una sólida formación técnica, sino que también prepara a los estudiantes para afrontar los desafíos del mundo empresarial actual.
+            </p>
+            <img src="./img/tecn-TAE.png" alt="AdmEmpr" class="img-right2">
+        </div>    
+        <br>
+    <h3>Perfil Profesional</h3>
+    <p>El Técnico en Administración de Empresas se forma para:</p>
+    <p class="specl">- Administrar y gestionar recursos humanos, materiales y financieros en empresas.</p>
+    <p class="specl">- Desarrollar planes de negocio y estrategias de marketing.</p>
+    <p class="specl">- Realizar análisis contables y financieros para la toma de decisiones.</p>
+    <p class="specl">- Implementar sistemas de gestión de calidad y mejora continua.</p>
+    <p class="specl">- Asesorar en la creación y desarrollo de microempresas.</p>
+
+    <h3>Contenidos y Materias</h3>
+    <p>La carrera incluye una variedad de materias que combinan teoría y práctica, tales como:</p>
+    <p class="specl">- Contabilidad</p>
+    <p class="specl">- Finanzas</p>
+    <p class="specl">- Marketing</p>
+    <p class="specl">- Recursos Humanos</p>
+    <p class="specl">- Derecho Empresarial</p>
+    <p class="specl">- Gestión de Proyectos</p>
+    <p class="specl">- Economía</p>
+    <p>Los estudiantes también tienen la oportunidad de participar en prácticas profesionales que les permiten aplicar los conocimientos adquiridos en un entorno real.</p>
+
+    <h3>Requisitos de Inscripción</h3>
+    <p>Para inscribirse en la carrera, los interesados deben presentar:</p>
+    <p class="specl">- Constancia de alumno regular de 6° grado de Educación Primaria.</p>
+    <p class="specl">- Fotocopia del DNI.</p>
+    <p class="specl">- Fotocopia certificada de la partida de nacimiento.</p>
+    <p class="specl">- Certificados de salud y bucodental.</p>
+    <p class="specl">- Grupo sanguíneo y factor RH.</p>
+    <p class="specl">- Foto carnet.</p>
+    <p class="specl">- Certificado de vacunación completo.</p>
+    <p class="specl">- Constancia de CUIL.</p>
+    <p class="specl">- Carpeta de tres solapas amarilla.</p>
+    <p>La inscripción suele realizarse en septiembre. Se recomienda consultar directamente con la escuela para obtener
+        información actualizada sobre fechas y procedimientos.</p>
+    </section>
+
+    <footer>
+        <img src="img/icon-school.png" alt="Logo" id="logo">
+        <p>&copy; 2024 Escuela Técnica N°2 "Independencia". All rights reserved.</p>
+        <button onclick="topFunction()" id="back-to-top" title="Go to top">&uarr;</button>
+    </footer>
+</div>
 
 
-    <script src="script.js"></script>
+    <script src="tecScript.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

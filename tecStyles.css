@@ -1,0 +1,89 @@
+/* Image TC */
+#tech-computacion .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+#tech-computacion .imgfill {
+    width: 60%;
+    margin-right: 20px;
+    text-align: justify;
+    color: #2f2f30;
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#tech-computacion .img-right {
+    width: 35%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+    #tech-computacion .content-wrapper {
+        flex-direction: column; 
+    }
+
+    #tech-computacion .imgfill {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    #tech-computacion .img-right {
+        width: 100%; 
+        max-width: none;
+    }
+}
+
+/* Image TAE y TG*/
+#tech-aeg .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+#tech-aeg .imgfill2 {
+    width: 35%;
+    margin-right: 20px;
+    text-align: justify;
+    color: #2f2f30;
+    font-size: 1rem;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#tech-aeg .img-right2 {
+    width: 60%;
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+    #tech-aeg .content-wrapper {
+        flex-direction: column; 
+    }
+
+    #tech-aeg .imgfill2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    #tech-aeg .img-right2 {
+        width: 100%; 
+        max-width: none;
+    }
+}
