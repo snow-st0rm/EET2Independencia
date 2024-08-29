@@ -12,6 +12,15 @@
 
     <link rel="shortcut icon" href="img/icon-school.png">
     <link rel="icon" href="img/icon-school.png">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!localStorage.getItem('hasVisited')) {
+                localStorage.setItem('hasVisited', 'true');
+                window.location.href = 'landing.html';
+            }
+        });
+    </script>
 </head>
 
 <body>
