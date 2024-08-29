@@ -1,0 +1,279 @@
+/* El código es de Leon, hice de todo para arreglar el responsive pero no se puede, 
+intenté cambiar el HTML, intenté usar JavaScript, intenté cambiar el CSS, NADA FUNCIONA. 
+Lo último que quedaría sería el re-hacer el código desde 0 pero ya mentalmente 
+no puedo seguir mirando el código, NO DOY MÁS. 
+LLEVO 2 DÍAS PASADO EL TIEMPO DE ENTREGA INTENTANDO ARREGLAR ESTO. 
+Si mi nota vale más por una Landing que yo no hice creo que me va a dar un ataque de pánico, 
+gracias. 
+- Shiro. */
+
+body {
+    background: linear-gradient(90deg, #05274C, #79A9D1);
+}
+
+/* 1st Box */
+#box {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.boton-container {
+    position: relative;
+}
+
+.verMasBtn {
+    background-color: #602234 !important;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    opacity: 80%;
+    transition: opacity 0.3s ease;
+}
+
+.verMasBtn.hidden {
+    visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
+
+.contenido {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.overlay.expanded .contenido {
+    font-size: 12px;
+}
+
+@media (max-width: 380px) {
+    .contenido {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: justify;
+    }
+
+    .boton {
+        position: absolute;
+        left: 20px;
+        bottom: 10px;
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/* 2nd Box */
+#box2 {
+    padding: 15px;
+}
+
+.rectangulo {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    background-color: #f0eff8;
+    border: 3px solid #171847;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+
+.seccion-izquierda {
+    background-color: #79A9D1;
+    flex-basis: 30%;
+    padding: 45px;
+    border-right: 3px solid #171847;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #171847;
+}
+
+.seccion-derecha {
+    background-color: #f0eff8;
+    flex-basis: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seccion-izquierda h3 {
+    margin-bottom: 10px;
+}
+
+.seccion-derecha p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #02000e;
+    text-align: justify;
+}
+
+.seccion-derecha p::first-letter {
+    font-size: 18px;
+    font-weight: bold;
+    color: #02000e;
+}
+
+#countdown1 {
+    color: #5649b9;
+}
+
+
+@media (max-width: 768px) {
+    .rectangulo {
+        flex-direction: column;
+        border: none;
+    }
+
+    .seccion-izquierda {
+        flex-basis: 100%;
+        border-bottom: 3px solid #171847;
+    }
+
+    .seccion-derecha {
+        flex-basis: 100%;
+        border: none;
+    }
+}
+
+.mapa {
+    width: 600px;
+    height: 450px;
+    margin: 10px auto;
+    float: left;
+}
+
+#map {
+    padding: 15px;
+    margin-top: -20px;
+}
+
+.caja-lateral {
+    float: left;
+    width: calc(100% - 620px);
+    margin-top: -6px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.caja-superior {
+    flex-basis: 70%;
+    background-color: #602234;
+    padding: 20px;
+    margin-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.caja-superior img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caja-inferior {
+    flex-basis: 30%;
+    background-image: url('./expoImg/escview.png');
+    background-size: cover;
+    background-color: #333;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boton {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 200px;
+}
+
+.boton:hover {
+    background-color: #602234;
+}
+
+
+@media (max-width: 768px) {
+    .mapa {
+        width: 100%;
+        height: 300px;
+    }
+
+    .caja-lateral {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .caja-superior {
+        flex-basis: 100%;
+    }
+
+    .caja-inferior {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa {
+        height: 300px;
+    }
+
+    .caja-lateral {
+        margin-top: 120px;
+    }
+
+    .boton {
+        margin-top: 100px;
+    }
+}
