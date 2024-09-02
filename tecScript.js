@@ -15,23 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function scrollToSection(sectionId) {
-    var section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-document.addEventListener('DOMContentLoaded', function () {
-    var buttons = document.querySelectorAll('.bttnz');
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function (event) {
-            event.preventDefault(); 
-            var sectionId = this.dataset.section; 
-            scrollToSection(sectionId); 
-        });
-    });
-});
-
 //Footer Button
 window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
