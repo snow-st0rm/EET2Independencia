@@ -78,8 +78,8 @@ function updateCountdown(elementId, endTime) {
 }
 
 updateCountdown('countdown1', '2024/09/05 8:00:00');
-updateCountdown('countdown2', '');
-updateCountdown('countdown3', '');
+updateCountdown('countdown2', '2024/10/10 14:00:00');
+updateCountdown('countdown3', '2024/11/15 8:00:00');
 
 // Form
 document.getElementById('contactForm').addEventListener('submit', function(event) {
